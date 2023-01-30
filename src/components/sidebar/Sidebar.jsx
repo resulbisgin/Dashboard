@@ -1,5 +1,6 @@
 import './sidebar.css'
 import { LineStyle ,Timeline,TrendingUp,Report, WorkOutline, Message,PermIdentity,DynamicFeed, Storefront,AttachMoney,BarChart,Markunread} from '@material-ui/icons'
+
 export default function Sidebar() {
   return (
     <div className='sidebar'>
@@ -25,14 +26,18 @@ export default function Sidebar() {
           <div className="sidebarMenu">
             <h3 className="sidebarTitle">Quick Menu</h3>
             <ul className="sidebarList">
+              <a className='link' href='./user'>
               <li className="sidebarListItem ">
                 <PermIdentity className='sidebarIcon'/>
                 Users
               </li>
+              </a>
+              <a className='link' href='./products'>
               <li className="sidebarListItem">
                 <Storefront className='sidebarIcon'/>
                 Products
               </li>
+              </a>
               <li className="sidebarListItem">
                 <AttachMoney className='sidebarIcon'/>
                 Transactions
