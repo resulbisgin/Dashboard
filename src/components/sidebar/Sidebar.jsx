@@ -1,5 +1,6 @@
 import './sidebar.css'
 import { LineStyle ,Timeline,TrendingUp,Report, WorkOutline, Message,PermIdentity,DynamicFeed, Storefront,AttachMoney,BarChart,Markunread} from '@material-ui/icons'
+import { Link } from '@material-ui/core'
 
 export default function Sidebar() {
   return (
@@ -8,10 +9,12 @@ export default function Sidebar() {
           <div className="sidebarMenu">
             <h3 className="sidebarTitle">Dashboard</h3>
             <ul className="sidebarList">
+              <a href='/' className='link'>
               <li className="sidebarListItem active" >
                 <LineStyle className='sidebarIcon'/>
                 Home
               </li>
+              </a>
               <li className="sidebarListItem">
                 <Timeline className='sidebarIcon'/>
                 Analytics
